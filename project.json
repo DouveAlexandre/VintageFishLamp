@@ -1,0 +1,55 @@
+{
+    "title": "Vintage Fish Lamp Pro",
+    "description": "Luminária de peixes antiga ultradetalhada com cardume dinâmico e efeitos atmosféricos.",
+    "file": "index.html",
+    "type": "web",
+    "general": {
+        "properties": {
+            "fishCount": {
+                "text": "Amount of Fish / Quantidade de Peixes",
+                "type": "slider",
+                "min": 1,
+                "max": 50,
+                "value": 15
+            },
+            "speed": {
+                "text": "Fish Speed / Velocidade dos Peixes",
+                "type": "slider",
+                "min": 0,
+                "max": 100,
+                "value": 20
+            },
+            "parallaxIntensity": {
+                "text": "Parallax Intensity / Intensidade do Parallax",
+                "type": "slider",
+                "min": 0,
+                "max": 100,
+                "value": 50
+            },
+            "bubbleAmount": {
+                "text": "Marine Snow / Neve Marinha (Bolhas)",
+                "type": "slider",
+                "min": 0,
+                "max": 200,
+                "value": 80
+            },
+            "causticsOpacity": {
+                "text": "Water Reflections / Reflexos de Água",
+                "type": "slider",
+                "min": 0,
+                "max": 100,
+                "value": 15
+            },
+            "showGodRays": {
+                "text": "Sun Rays / Raios de Sol",
+                "type": "bool",
+                "value": true
+            },
+            "mouseInteraction": {
+                "text": "Mouse Interaction / Interação com Mouse",
+                "type": "bool",
+                "value": true
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Lamp Wallpaper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Efeito de God Rays (Raios de Sol) -->
+        <div id="god-rays"></div>
+
+        <!-- Fundo estático -->
+        <div id="background"></div>
+
+        <!-- Container para os peixes individuais -->
+        <div id="fish-container"></div>
+
+        <!-- Efeito de Cáustica (reflexo da água) -->
+        <div id="caustics"></div>
+
+        <!-- Partículas (bolhas/sedimento) -->
+        <div id="particles"></div>
+
+        <!-- Painel de Controle (Debugging/Ajustes) -->
+        <div id="debug-panel">
+            <h3>Ajustes da Luminária</h3>
+            <div class="control-group">
+                <label>Peixes: <span id="val-fishCount">15</span></label>
+                <input type="range" id="input-fishCount" min="1" max="50" value="15">
+            </div>
+            <div class="control-group">
+                <label>Velocidade: <span id="val-speed">20</span></label>
+                <input type="range" id="input-speed" min="0" max="100" value="20">
+            </div>
+            <div class="control-group">
+                <label>Parallax: <span id="val-parallax">50</span></label>
+                <input type="range" id="input-parallax" min="0" max="100" value="50">
+            </div>
+            <div class="control-group">
+                <label>Bolhas: <span id="val-bubbles">80</span></label>
+                <input type="range" id="input-bubbles" min="0" max="200" value="80">
+            </div>
+            <div class="control-group">
+                <label>Reflexos: <span id="val-caustics">15</span></label>
+                <input type="range" id="input-caustics" min="0" max="100" value="15">
+            </div>
+            <div class="control-group">
+                <label><input type="checkbox" id="input-godrays" checked> Raios de Sol</label>
+                <label><input type="checkbox" id="input-mouse" checked> Interação Mouse</label>
+            </div>
+            <p style="font-size: 10px; opacity: 0.5;">*Estas opções aparecerão no menu do Wallpaper Engine quando
+                publicado.</p>
+        </div>
+
+        <!-- Efeito de vidro/reflexo da luminária -->
+        <div id="glass-overlay"></div>
+    </div>
+
+    <!-- Filtro SVG para distorção de água -->
+    <svg style="display: none;">
+        <filter id="water-filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.015" numOctaves="3" result="noise" seed="1" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
