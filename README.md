@@ -1,10 +1,12 @@
-# Vintage Fish Lamp Pro 🐠💡
+# Vintage Fish Lamp 🐠💡
 
 A highly detailed, interactive fish lamp wallpaper with a vintage aesthetic, designed for **Wallpaper Engine**. Experience a dynamic aquatic environment with parallax effects, realistic water distortions, and atmospheric lighting right on your desktop.
 
 ## 📺 Preview
 
-![Vintage Fish Lamp Preview](assets/preview.mp4)
+[<img src="https://img.youtube.com/vi/LWuN-ZIR4bc/maxresdefault.jpg" width="100%">](https://youtu.be/LWuN-ZIR4bc)
+
+[Click here to watch the preview on YouTube](https://youtu.be/LWuN-ZIR4bc)
 
 *(Experience the live wallpaper in action)*
 
